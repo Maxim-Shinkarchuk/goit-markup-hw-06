@@ -235,6 +235,7 @@ ul [class] {list-style-type: none;}
         margin-top: 30px;
        
         border-radius: 3px;
+        border: none;
 
         font-family: Roboto, sans-serif;
         color: var(--title-second-text-color);
@@ -600,10 +601,11 @@ letter-spacing: 0.03em;
     align-items: center;
     width: 170px;
     height: 90px;
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     cursor: pointer;
-    transition-property: border, background-color;
+    transition-property: border, background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -903,7 +905,7 @@ margin-right: 94px;
     background: #FFFFFF;
    }
 
-.portfolio-link:hover .portfolio-overlay{
+.portfolio-link:hover .portfolio-overlay, .portfolio-link:focus .portfolio-overlay {
     transform: translateY(-100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -955,6 +957,7 @@ margin-right: 94px;
     padding-top: 20px;
     padding-bottom: 4px;
     padding-left: 24px;
+    padding-right: 24px;
     margin: 0;
     
     color: var(--title-text-color);
@@ -970,6 +973,7 @@ margin-right: 94px;
     padding-top: 4px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
     margin: 0;
    
     color: var(--primary-text-color);
@@ -979,4 +983,15 @@ margin-right: 94px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+  
 }
