@@ -1074,8 +1074,21 @@ color: #212121;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-.form-input:hover > .field-label{
-    border: var(--accent-color);
+ .field-lable:hover .form-input{
+    border: 1px solid var(--accent-color);
+}
+
+.modal-icon{
+    fill: var(--title-text-color);
+}
+
+.field-lable:hover .modal-icon{
+    fill:var(--accent-color)
+}
+
+.field-lable:hover .form-label{
+    color: var(--accent-color);
+    transform: translateX(-24px) translateY(-32px);
 }
 
 
