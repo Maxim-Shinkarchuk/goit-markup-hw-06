@@ -473,7 +473,7 @@
           </p>
           <input class="email-input" type="email">
           <!--Кнопка с подпиской на рассылку-->
-          <button type="button" class="button-second">Подписаться 
+          <button type="submit" class="button-second">Подписаться 
             <svg class="send-icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-send"></use>
           </svg></button>
@@ -516,13 +516,13 @@
             </svg>
           </span>
         </label>
-        <textarea class="textarea-field" placeholder="Комментарий"></textarea>
+        <textarea class="textarea-field" placeholder=" "></textarea>
+        <span class="textarea-coment">Комментарий</span>
         <label class="check-lable">
-          <span>
             <input type="checkbox" class="check-agreement visually-hidden">
-          </span>
+            <span class="check-custom"></span>
           <span class="text-agreement">Соглашаюсь с рассылкой и принимаю</span>
-          <a href="">Условия договора</a>
+          <a href="" class="agreement">Условия договора</a>
         </label>
         <button type="submit" class="button-submit">Отправить</button>
       </form>
