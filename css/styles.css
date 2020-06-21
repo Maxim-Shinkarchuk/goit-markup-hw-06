@@ -1073,10 +1073,11 @@ color: #212121;
     border-radius: 4px;
 }
 
-.form-input:focus + .form-lable,
-.form-input:not(:placeholder-shown) + .form-lable{
-    transform: translateY(-40px) translateX(25px);
-    color: red;
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-32px) translateX(-22px);
+    color: var(--accent-color);
+    font-size: 12px;
 }
 
 .form__text-input{
@@ -1085,16 +1086,14 @@ color: #212121;
     border-radius: 4px;
 }
 
-.field-lable{
+.field-label{
     position: relative;
     justify-content: center;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 28px;
-    transition-property: border, color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    ;
     }
 
 /*.field-lable:focus-within > .form-lable,
@@ -1104,7 +1103,7 @@ color: #212121;
     line-height: 1.17;
 }*/
 
-.field-lable:focus-within > .form-lable{
+.field-label:focus-within > .form-lable{
     color: var(--accent-color);
 }
 
@@ -1114,11 +1113,11 @@ color: #212121;
     fill: var(--title-text-color);
 }
 
-.field-lable:focus       .modal-icon{
+.field-label:focus .modal-icon{
     fill:var(--accent-color)
 }
 
-.field-lable:checked .form-label{
+.field-label:checked .form-label{
     color: var(--accent-color);
     transform: translateX(-24px) translateY(-32px);
 }
@@ -1127,6 +1126,9 @@ color: #212121;
 .form-label{
 position: absolute;
 left: 42px;
+transition-property: color font-size;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 
 font-family: Roboto, sans-serif;
 font-style: normal;
@@ -1166,7 +1168,7 @@ color: var(--primary-text-color);
     color: var(--primary-text-color);
 }
 
-.check-lable{
+.check-label{
     
 }
 
