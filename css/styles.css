@@ -1007,9 +1007,9 @@ margin-right: 94px;
     position: absolute;
 
     padding: 40px;
-    top: 221px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
     background: #FFFFFF;
@@ -1089,7 +1089,7 @@ color: #212121;
     fill: var(--title-text-color);
 }
 
-.field-lable:hover .modal-icon{
+.field-lable:checked .modal-icon{
     fill:var(--accent-color)
 }
 
