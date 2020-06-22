@@ -1018,10 +1018,9 @@ margin-right: 94px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: 250ms cubic-bezier (0.4, 0, 0.2, 1);
-    transition-property: all;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 528px;
-    height: 581px;
+    
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -1196,6 +1195,7 @@ color: var(--primary-text-color);
 .textarea-field:focus ~ .textarea-coment {
     transform: translateY(-35px);
     color: var(--accent-color);
+    font-size: 12px;
     
 }
 
@@ -1205,6 +1205,7 @@ color: var(--primary-text-color);
 
 .text-agreement{
    display: inline-block;
+   margin-right: 2px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -1233,10 +1234,15 @@ color: var(--primary-text-color);
     background-size: contain;
 }
 
+.check-label{
+    display: flex;
+    align-items: center;
+}
+
 .check-custom{
     display: inline-block;
-    align-items: flex-end;
     background-image: url(../images/full-check.svg);
+    margin-right: 7px;
     width: 16px;
     height: 15px;
     border: 2px solid black;
